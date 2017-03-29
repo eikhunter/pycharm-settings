@@ -23,10 +23,7 @@
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/hamburgers.css">
     <link rel="stylesheet" href="css/styles.css">
-
-    <!-- Scripts
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script src="https://use.fontawesome.com/cd4dbaf2d1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -43,10 +40,15 @@
         <div class="container">
           <a class="logo u-pull-left" href="/">Crewseekers</a>
           <div class="user u-pull-right">
-            <a class="telephone">+44 (0) 238 115 9207</a>
-            <a class="btn joinbutton">Join Now</a>
-            <a class="btn loginbutton">Login</a>
+            <a class="telephone"><i class="fa fa-phone" aria-hidden="true"></i> +44 (0) 238 115 9207</a>
+            <a class="btn joinbutton" href="/">Join Now</a>
+            <a class="btn loginbutton" href="/">Login</a>
             <a class="navigate">Navigate</a>
+            <div class="hamburger hamburger--vortex">
+                <div class="hamburger-box">
+              <div class="hamburger-inner"></div>
+            </div>
+            </div>
           </div>
         </div>
       </nav>
@@ -55,42 +57,45 @@
     <!-- Primary Page Layout
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <section class="header_banner">
-      <div class="overlay">
-        <div class="container">
+      <div class="container">
+        <div class="text wow fadeInUp data-wow-duration="10s"">
           <h1>Sailing Opportunities</h1>
           <h2>Current Sailing Opportunities</h2>
+          <p>All of our amazing sailing opportunities are free to browse. <a href="/">Join Crewseekers</a> to make contact with Skippers.</p>
         </div>
       </div>
     </section>
 
     <section>
       <div class="container">
-        <div class="row">
+        <div class="row refine-search">
           <div class="eight columns">
             <select>
-              <option value="volvo">All trip types</option>
-              <option value="saab">Example 2</option>
-              <option value="mercedes">Example 3</option>
-              <option value="audi">Example 4</option>
+              <option>All trip types</option>
+              <option>Example 2</option>
+              <option>Example 3</option>
+              <option>Example 4</option>
             </select>
             <select>
-              <option value="volvo">All locations</option>
-              <option value="saab">Example 2</option>
-              <option value="mercedes">Example 3</option>
-              <option value="audi">Example 4</option>
+              <option>All locations</option>
+              <option>Example 2</option>
+              <option>Example 3</option>
+              <option>Example 4</option>
             </select>
             <select>
-              <option value="volvo">All qualifications</option>
-              <option value="saab">Example 2</option>
-              <option value="mercedes">Example 3</option>
-              <option value="audi">Example 4</option>
+              <option>All qualifications</option>
+              <option>Example 2</option>
+              <option>Example 3</option>
+              <option>Example 4</option>
             </select>
-            <div class="btn apply">Apply</div>
+            <a class="btn apply" href="/">Apply</a>
           </div>
           <div class="four columns">
             <form>
-              <input type="text" placeholder="Search by boat reference" required>
-              <input type="button" value="Search">
+              <div class="searchbox">
+                <input type="text" placeholder="Search by boat reference" required>
+                <a href="/"><i class="fa fa-search" aria-hidden="true"></i></a>
+              </div>
             </form>
           </div>
         </div>
@@ -99,102 +104,140 @@
 
     <section>
       <div class="container">
-        <p>52 sailing opportunities found All trip types : All locations : All qualifications</p>
-        <div class="u-pull-right">
-          <a href="#" class="previous">Prev</a>
-          <a href="#" class="next">Next</a>
+        <div class="results">
+          <p class="u-pull-left">52 sailing opportunities found All trip types : All locations : All qualifications</p>
+          <div class="u-pull-right">
+            <a href="#" class="btn previous">Prev</a>
+            <a href="#" class="btn next">Next</a>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section class="opportunities">
+      <div class="container">
         <div class="row">
           <div class="four columns">
             <div class="opportunity">
               <span class="image image_one"></span>
-              <h2></h2>
-              <p></p>
-              <p></p>
-              <a class="btn viewall" href="/"></a>
+              <div class="text">
+                <h2>The Bahamas-Nassau or Georgetown to the BVI</h2>
+                <p>Boat type: <span>Sailing catamaran</span></p>
+                <p>Location: <span>Georgetown, The Bahamas</span></p>
+                <a class="btn viewall" href="/">View opportunity</a>
+              </div>
             </div>
+          </div>
+          <div class="four columns">
             <div class="opportunity">
               <span class="image image_two"></span>
-              <h1></h1>
-              <p></p>
-              <p></p>
-              <a class="btn viewall" href="/"></a>
+              <div class="text">
+                <h2>Cruising from Vancouver BC Sep 2017 to Mexico & Central America</h2>
+                <p>Boat type: <span>Sailing catamaran</span></p>
+                <p>Location: <span>Georgetown, The Bahamas</span></p>
+                <a class="btn viewall" href="/">View opportunity</a>
+              </div>
             </div>
+          </div>
+          <div class="four columns">
             <div class="opportunity">
               <span class="image image_three"></span>
-              <h1></h1>
-              <p></p>
-              <p></p>
-              <a class="btn viewall" href="/"></a>
+              <div class="text">
+                <h2>Sailing the Med and the Balearics</h2>
+                <p>Boat type: <span>Sailing catamaran</span></p>
+                <p>Location: <span>Georgetown, The Bahamas</span></p>
+                <a class="btn viewall" href="/">View opportunity</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row wow fadeInUp">
           <div class="four columns">
             <div class="opportunity">
               <span class="image image_four"></span>
-              <h2></h2>
-              <p></p>
-              <p></p>
-              <a class="btn viewall" href="/"></a>
+              <div class="text">
+                <h2>Channel Islands to Caribbean via Gibraltar</h2>
+                <p>Boat type: <span>Sailing catamaran</span></p>
+                <p>Location: <span>Georgetown, The Bahamas</span></p>
+                <a class="btn viewall" href="/">View opportunity</a>
+              </div>
             </div>
+          </div>
+          <div class="four columns">
             <div class="opportunity">
               <span class="image image_five"></span>
-              <h2></h2>
-              <p></p>
-              <p></p>
-              <a class="btn viewall" href="/"></a>
+              <div class="text">
+                <h2>Algarve/Mediterranean Sailing</h2>
+                <p>Boat type: <span>Sailing catamaran</span></p>
+                <p>Location: <span>Georgetown, The Bahamas</span></p>
+                <a class="btn viewall" href="/">View opportunity</a>
+              </div>
             </div>
+          </div>
+          <div class="four columns">
             <div class="opportunity">
               <span class="image image_six"></span>
-              <h2></h2>
-              <p></p>
-              <p></p>
-              <a class="btn viewall" href="/"></a>
+              <div class="text">
+                <h2>Algarve/Mediterranean Sailing</h2>
+                <p>Boat type: <span>Sailing catamaran</span></p>
+                <p>Location: <span>Georgetown, The Bahamas</span></p>
+                <a class="btn viewall" href="/">View opportunity</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row wow fadeInUp">
           <div class="four columns">
             <div class="opportunity">
               <span class="image image_seven"></span>
-              <h2></h2>
-              <p></p>
-              <p></p>
-              <a class="btn viewall" href="/"></a>
+              <div class="text">
+                <h2>Canary Islands to Los Angeles on famous ex-racing sail boat</h2>
+                <p>Boat type: <span>Sailing catamaran</span></p>
+                <p>Location: <span>Georgetown, The Bahamas</span></p>
+                <a class="btn viewall" href="/">View opportunity</a>
+              </div>
             </div>
+          </div>
+          <div class="four columns">
             <div class="opportunity">
               <span class="image image_eight"></span>
-              <h2></h2>
-              <p></p>
-              <p></p>
-              <a class="btn viewall" href="/"></a>
+              <div class="text">
+                <h2>Daysails and Catalina excursions from Marina del Rey</h2>
+                <p>Boat type: <span>Sailing catamaran</span></p>
+                <p>Location: <span>Georgetown, The Bahamas</span></p>
+                <a class="btn viewall" href="/">View opportunity</a>
+              </div>
             </div>
-            <div class="opportunity">
-              <span class="image image_nine"></span>
-              <h2></h2>
-              <p></p>
-              <p></p>
-              <a class="btn viewall" href="/"></a>
+          </div>
+          <div class="four columns">
+            <div class="opportunity yacht-advert">
+              <div class="text">
+                <p>Advertisment</p>
+                <h2>Join a yacht racing crew</h2>
+              </div>
             </div>
           </div>
         </div>
         <div class="page_numbers">
-          <a href="#" class="previous">Prev</a>
-          <a class="page_number">1</a>
-          <a class="page_number">2</a>
-          <a class="page_number">3</a>
-          <a class="page_number">&hellip;</a>
-          <a class="page_number">10</a>
-          <a href="#" class="next">Next</a>
+          <a class="btn previous" href="#">Prev</a>
+          <a class="btn page_number active" href="#">1</a>
+          <a class="btn page_number" href="#">2</a>
+          <a class="btn page_number" href="#">3</a>
+          <a class="btn page_number" href="#">&hellip;</a>
+          <a class="btn page_number" href="#">10</a>
+          <a class="btn next" href="#">Next</a>
         </div>
-        <a class="advert">Uber</a>
+        <a class="advert" href="/">Uber</a>
       </div>
     </section>
 
     <section class="footer_banner">
       <div class="container">
-
+        <div class="text">
+          <h2>Join Crewseekers Today</h2>
+          <p>Cras mattis consectetur purus sit amet fermentum. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus.</p>
+          <a class="btn signup" href="/">SIGN UP TO CREWSEEKERS</a>
+        </text>
       </div>
     </section>
 
@@ -206,28 +249,28 @@
           <div class="three columns">
             <h2>Membership</h2>
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>Register/Signup</li>
+              <li>Post sailing opportunity</li>
+              <li>Renew membership</li>
+              <li>Gift membership</li>
             </ul>
           </div>
           <div class="three columns">
             <h2>Sailing</h2>
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>Search sailing opportunities</li>
+              <li>Testimonials</li>
+              <li>Travel and safety</li>
+              <li>Insurance</li>
             </ul>
           </div>
           <div class="three columns">
             <h2>Information</h2>
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>About us</li>
+              <li>FAQs</li>
+              <li>Useful links</li>
+              <li>Help and support</li>
             </ul>
           </div>
           <div class="three columns">
@@ -249,4 +292,18 @@
   <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   </body>
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://use.fontawesome.com/cd4dbaf2d1.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+  new WOW().init();
+  </script>
+  <script>
+  var hamburger = document.querySelector(".hamburger");
+  hamburger.addEventListener("click", function() {
+  hamburger.classList.toggle("is-active");
+  });
+  </script>
 </html>

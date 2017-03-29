@@ -25,6 +25,7 @@
     "gulp-sass": "^3.1.0"
   },
   "dependencies": {
+    "animate.css": "^3.5.2",
     "connect": "^3.6.0",
     "gulp": "^3.9.1",
     "server-static": "^1.9.0"
