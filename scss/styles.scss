@@ -2,6 +2,17 @@ body {
   background: #e8ebed;
 }
 
+.container {
+  width: 1180px;
+}
+
+.btn {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 38px;
+  text-transform: uppercase;
+}
+
 // Header
 
 header {
@@ -13,20 +24,37 @@ header {
 
 .header_banner {
   background: url("/images/header-banner.png") no-repeat center;
+  background-size: cover;
   height: 355px;
   position: relative;
 
-  :before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background: rgb(22,37,41); /* Old browsers */
-    background: -moz-linear-gradient(left, rgba(22,37,41,0.5) 0%, rgba(42,72,79,0.5) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(22,37,41,0.5) 0%,rgba(42,72,79,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(22,37,41,0.5) 0%,rgba(42,72,79,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#162529', endColorstr='#2a484f',GradientType=1 ); /* IE6-9 */
+  .logo {
+    background: url("/images/logo-large.png") no-repeat center;
+    background-size: contain;
+    text-indent: -9999px;
+    width: 205px;
+    height: 60px;
+  }
+
+  .user {
+    height: 95px;
+    line-height: 95px;
+    text-transform: uppercase;
+
+    a {
+      display: inline-block;
+      color: #273339;
+    }
+
+    .joinbutton {
+      background: #14b7a0;
+      color: #c0ece6;
+    }
+
+    .loginbutton {
+      border: 1px solid #d7d7d7;
+    }
   }
 }
+
+
