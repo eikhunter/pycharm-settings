@@ -1,3 +1,32 @@
 body {
-  background: #000;
+  background: #e8ebed;
+}
+
+// Header
+
+header {
+  background: #fff;
+  height: 95px;
+  overflow: hidden;
+  position: relative;
+}
+
+.header_banner {
+  background: url("/images/header-banner.png") no-repeat center;
+  height: 355px;
+  position: relative;
+
+  :before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgb(22,37,41); /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(22,37,41,0.5) 0%, rgba(42,72,79,0.5) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(22,37,41,0.5) 0%,rgba(42,72,79,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(22,37,41,0.5) 0%,rgba(42,72,79,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#162529', endColorstr='#2a484f',GradientType=1 ); /* IE6-9 */
+  }
 }
