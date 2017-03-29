@@ -4,12 +4,12 @@ var gulp = require('gulp'),
 
 gulp.task('sass', function() {
     return gulp
-        .src('/scss/*.scss')
+        .src('scss/*.scss')
         .pipe(sass())
         .pipe(cleanCSS())
-        .pipe(gulp.dest('/css'));
+        .pipe(gulp.dest('css'));
 });
 
 gulp.task('watch', ['sass'], function() {
-    return gulp.watch('/sass/styles.scss', ['sass']);
+    return gulp.watch('scss/styles.scss', ['sass']);
 });
