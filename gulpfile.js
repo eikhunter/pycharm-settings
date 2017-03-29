@@ -4,10 +4,10 @@ var gulp = require('gulp'),
 
 gulp.task('sass', function() {
     return gulp
-        .src('/sass/styles.scss')
+        .src('/scss/*.scss')
         .pipe(sass())
         .pipe(cleanCSS())
-        .pipe(gulp.dest('/css/styles.min.css'));
+        .pipe(gulp.dest('/css'));
 });
 
 gulp.task('watch', ['sass'], function() {

@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/eikhunter/onespacemedia/issues"
   },
-  "homepage": "https://github.com/eikhunter/onespacemedia#readme"
+  "homepage": "https://github.com/eikhunter/onespacemedia#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-sass": "^3.1.0"
+  }
 }
