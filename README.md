@@ -1,3 +1,7 @@
-## Notes
+## Pycharm
 
-Export settings for pycharm
+settings.jar
+
+## iTerm2
+
+com.googlecode.iterm2.plist
